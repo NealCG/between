@@ -47,7 +47,7 @@ Each session opens on a dark screen: the between logo, then "COME BACK ... TO CE
 - `SessionPresenter.swift` — opens and closes the session window, Esc / Space keys.
 - `SessionClock.swift` — timing, pause, the optional tone, and the daily count.
 - `MenuView.swift` — the drop-down from the menu bar.
-- `MenuIcon.swift` — the spoked-wheel menu bar icon.
+- `MenuIcon.swift` — the spoked-wheel menu bar icon. The matching app icon is `Assets/AppIcon.icns` (preview: `Assets/AppIcon.png`).
 - `Quotes.swift` — the closing quotes. Add your own to the list.
 - `Logo.swift` — the between wordmark, converted from `Assets/BetweenLogo.svg` into a native shape so it stays sharp at any size.
 
