@@ -16,7 +16,8 @@ struct BreathSequence: Identifiable {
     let phases: [Phase]
     let scene: SceneKind
 
-    static let splash: Double = 3.5          // the logo on a dark screen, to get your bearings
+    static let logoEnd: Double = 3.2         // the logo on a dark screen, to get your bearings
+    static let splash: Double = 6.8          // then the "come back to center" card, before the scene rises
     static let intro: Double = splash + 3    // then a 3-2-1 countdown before the first breath
 
     var cycle: Double { phases.reduce(0) { $0 + $1.seconds } }

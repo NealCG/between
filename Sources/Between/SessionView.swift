@@ -18,7 +18,9 @@ struct SessionView: View {
             let frame = clock.finished ? nil : seq.frame(at: t)
             // Opening: the logo fades in on black, holds, fades out; then the scene rises from the dark.
             let splash = BreathSequence.splash
-            let logo = clock.finished ? 0 : clamp01(t / 0.8) * clamp01((splash - 0.1 - t) / 0.8)
+            let logoEnd = BreathSequence.logoEnd
+            let logo = clock.finished ? 0 : clamp01(t / 0.8) * clamp01((logoEnd - t) / 0.8)
+            let card = clock.finished ? 0 : clamp01((t - logoEnd) / 0.9) * clamp01((splash - 0.1 - t) / 0.9)
             let veil = clock.finished ? 0 : clamp01(1 - (t - (splash - 0.5)) / 1.5)
 
             ZStack {
@@ -52,6 +54,8 @@ struct SessionView: View {
                         .fill(Color(red: 244 / 255, green: 243 / 255, blue: 236 / 255))
                         .frame(width: 220, height: 220 / LogoShape.aspect)
                         .opacity(logo)
+                    IntroCard(color: Color(red: 244 / 255, green: 243 / 255, blue: 236 / 255))
+                        .opacity(card)
                 }
                 .allowsHitTesting(false)
             }

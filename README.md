@@ -43,7 +43,7 @@ A few minutes later it appears under Releases with `Between.zip` attached.
 | Focus | Box 5-5-5-5 | 3:00 | Before deep work or a meeting |
 | Wind Down | 5 in, 7 hold, 9 out | 3:09 | End of the day |
 
-Each session opens on a dark screen with the between logo for about three and a half seconds, then the scene fades up and a 3-2-1 countdown leads into the first breath. It ends on a closing quote that rotates each time. Lengths round to whole breath cycles so a session never cuts off mid-breath.
+Each session opens on a dark screen: the between logo, then the "come back to center" card (`Assets/ComeBack.svg`, drawn by `IntroCard.swift`). Then the scene fades up and a 3-2-1 countdown leads into the first breath. It ends on a closing quote that rotates each time. Lengths round to whole breath cycles so a session never cuts off mid-breath.
 
 ## Where things live
 
