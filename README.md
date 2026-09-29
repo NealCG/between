@@ -26,14 +26,7 @@ open Between.app
 
 ## Releasing a new version
 
-GitHub builds the app on every push to `main` (see the Actions tab). To publish a version friends can download from the link above:
-
-```bash
-git tag v0.2
-git push origin v0.2
-```
-
-A few minutes later it appears under Releases with `Between.zip` attached.
+Every push to `main` builds the app on GitHub and publishes it as the release named in the `VERSION` file, so the download link above always has the latest build. To start a new numbered release, change `VERSION` (for example to `0.2`) and push.
 
 ## The sequences
 
